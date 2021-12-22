@@ -1,0 +1,16 @@
+plugins {
+  id 'java'
+}
+
+sourceCompatibility = 11
+
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  testImplementation 'junit:junit:4.13.2'
+  testImplementation 'com.codeborne:selenide:5.25.0'
+  testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.32'
+  testImplementation 'org.testcontainers:selenium:1.16.2'
+}
